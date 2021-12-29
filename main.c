@@ -43,15 +43,11 @@ int main(){
 
                 if(ArquivoLido(ind->arquivos, nArq)==0){
 
-                    InsereArquivo(ind->arquivos, nArq);
-
-                    ind->qtdArquivos++;
                     ind->arquivos=InsereArquivo(ind->arquivos, nArq);
-                    
-                    ImprimeArq(ind->arquivos);
-                    
+                    ind->qtdArquivos++;
+                //    ImprimeArq(ind->arquivos)              
                     printf("\nArquivo Inserido com sucesso\n");
-                    
+                   
                     printf("\nNome arq = %s\n", ind->arquivos->nomeArquivo);
                     ind->palavras=ListaPalavrasArquivo(ind->palavras, nArq); // aqui tem erro
                 }else

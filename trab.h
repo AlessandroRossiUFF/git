@@ -52,8 +52,7 @@ Arquivo *InsereArquivo(Arquivo *arq, char* nomeArq)
     printf("Erro de alocação");
   }else{
     p->prox = arq;
-    arq=p;    
-    
+    arq=p;        
   }
   return arq;
 }
@@ -223,11 +222,11 @@ void ImprimeArq(Arquivo *arq){
 }
 
 void ImprimeIndice(Indice *indice){
-    printf("\nlISTA DE ARQUIVOS: \n\n");
-    ImprimeArq(indice->arquivos);
-    printf("\nLISTA DE PALAVRAS: \n\n");
-    ImprimePalavras(indice->palavras);
-    printf("--- fim da lista de palavras---\n\n");
+  printf("\nlISTA DE ARQUIVOS: \n\n");
+  ImprimeArq(indice->arquivos);
+  printf("\nLISTA DE PALAVRAS: \n\n");
+  ImprimePalavras(indice->palavras);
+  printf("--- fim da lista de palavras---\n\n");
 }
 
 
